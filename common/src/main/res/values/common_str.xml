@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="never">不再提醒</string>
+
+    <string name="header_hint_normal">下拉刷新</string>
+    <string name="header_hint_ready">松开刷新数据</string>
+    <string name="header_hint_loading">正在加载&#8230;</string>
+    <string name="header_last_time">上次更新时间：</string>
+    <string name="footer_hint_normal">查看更多</string>
+    <string name="footer_hint_ready">松开载入更多</string>
+    <string name="footer_hint_loading">正在加载&#8230;</string>
+    <string name="footer_hint_empty">没有数据</string>
+    <string name="load_empty">数据为空</string>
+    <string name="load_fail">加载失败</string>
+    <string name="reload_hint">重新加载</string>
+
+    <string name="common_input_empty">输入为空</string>
+    <string name="common_dialog_reply">故障回复</string>
+
+    <!-- 文件权限-->
+    <string name="provider_image">com.sofi.eptcard.fileProvider</string>
+
+</resources>

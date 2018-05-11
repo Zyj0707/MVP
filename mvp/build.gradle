@@ -33,6 +33,7 @@ publish {
     artifactId = 'mvp'//项目名称
     publishVersion = '1.0.2'//版本号
 }
+//gradlew clean build bintrayUpload -PbintrayUser=zyj222 -PbintrayKey=bbb -PdryRun=false
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

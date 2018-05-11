@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_tab_height">48dp</dimen>
+    <dimen name="common_bottom_height">64dp</dimen>
+    <dimen name="common_spacing">8dp</dimen>
+    <dimen name="common_indicator_height">2dp</dimen>
+    <dimen name="common_indicator_start">0dp</dimen>
+    <dimen name="toolbar_padding">0dp</dimen>
+    <dimen name="toolbar_size">18sp</dimen>
+
+    <dimen name="input_margin_t">10dp</dimen>
+    <dimen name="input_margin_lr">10dp</dimen>
+    <dimen name="input_padding">10dp</dimen>
+
+    <dimen name="reload_size">16sp</dimen>
+    <dimen name="reload_margin">10dp</dimen>
+    <dimen name="reload_padding">3dp</dimen>
+
+</resources>

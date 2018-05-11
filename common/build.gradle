@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "com.android.support:design:$rootProject.ext.androidSupportSdkVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.androidSupportSdkVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.androidSupportSdkVersion"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile project(path: ':mvp')
+
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxAndroidVersion"
+    implementation "com.google.dagger:dagger:$rootProject.ext.dagger2Version"
+    implementation "com.readystatesoftware.systembartint:systembartint:1.0.3"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okHttpVersion"
+    provided "com.google.auto.value:auto-value:$rootProject.ext.autoValueVersion"
+    implementation "com.facebook.stetho:stetho:$rootProject.ext.stethoVersion"
+    implementation "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stethoVersion"
+    implementation "com.facebook.fresco:fresco:$rootProject.ext.frescoVersion"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    compile "com.squareup:otto:$rootProject.ext.ottoVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.ext.retrofitRxJava2AdapterVersion"
+    compile "com.jakewharton.timber:timber:4.3.1"
+    compile "com.squareup.sqlbrite2:sqlbrite:$rootProject.ext.sqlBriteVersion"
+    compile "com.squareup.sqldelight:runtime:$rootProject.ext.sqlDelightVersion"
+    compile "com.github.filippudak.progresspieview:library:1.0.4"
+    compile "commons-io:commons-io:2.6"
+    compile "com.davemorrissey.labs:subsampling-scale-image-view:3.6.0"
+    compile "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.ext.rxPermissionsVersion"
+    compile "com.github.castorflex.smoothprogressbar:library:1.1.0"
+
+    annotationProcessor "com.google.auto.value:auto-value:$rootProject.ext.autoValueVersion"
+    annotationProcessor "com.ryanharter.auto.value:auto-value-parcel:$rootProject.ext.autoValueParcelVersion"
+}

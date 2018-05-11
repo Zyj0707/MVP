@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 刷新布局视图 -->
+    <item name="mPullRecycler" type="id" />
+    <!-- 列表视图 -->
+    <item name="recyclerView" type="id" />
+    <!-- 刷新视图 -->
+    <item name="swipeRefreshLayout" type="id" />
+    <!-- 内容视图 -->
+    <item name="layoutContent" type="id" />
+    <!-- 加载视图 -->
+    <item name="layoutEmpty" type="id" />
+    <!-- 空视图 -->
+    <item name="layoutLoading" type="id" />
+    <!-- 加载失败视图 -->
+    <item name="layoutLoadFailed" type="id" />
+
+</resources>
